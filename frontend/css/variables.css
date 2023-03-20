@@ -1,0 +1,29 @@
+@import url("./font.css");
+
+:root {
+    --primary-font: "IRANSans";
+    --primary-font-bold: "IRANSans-Bold";
+    --primary-size: 14px;
+    --small-size: 11px;
+    --h6: 16px;
+    --h5: 18px;
+    --h4: 20px;
+    --h3: 22px;
+    --h2: 25px;
+    --h1: 30px;
+    --primary-line: 27px;
+    --small-line: 21px;
+    --h6-line: 26px;
+    --h5-line: 28px;
+    --h4-line: 30px;
+    --h3-line: 32px;
+    --h2-line: 35px;
+    --h1-line: 45px;
+    --btn-padding-light: 7px 15px;
+    --btn-padding-normal: 12px 25px;
+    --primary-color: #2ED573;
+    --sec-color: #35374d;
+    --white-color: #efefef;
+    --dark-color: #242532;
+    --link-color: #c9ccf8;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پنل ادمین</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/panel/index.css">
+</head>
+
+<body>
+    <section class="spinner-wrapper">
+        <div class="spinner"></div>
+    </section>
+
+    <div class="full-container flex">
+        <section class="full-container_right p2">
+            <ul class="siderbar w100 h100 flex column start gap3 p2">
+                <a class="sidebar_item w100 flex column">
+                    <img src="../images/img/farzad.jpg" alt="admin profile" class="siderbar_profile">
+                    <span class="sidebar_adminname py2"></span>
+                </a>
+                <a href="index.html?btn=index"
+                    class="sidebar_item w100 flex between gap2 p1" id="index">
+                    <span>صفحه اصلی</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path opacity="0.4"
+                            d="M3 9.84719C3 8.99027 3.36644 8.17426 4.00691 7.60496L9.34255 2.86217C10.8581 1.51502 13.1419 1.51502 14.6575 2.86217L19.9931 7.60496C20.6336 8.17426 21 8.99027 21 9.84719V18C21 20.2091 19.2091 22 17 22H7C4.79086 22 3 20.2091 3 18V9.84719Z"
+                            fill="#efefef" />
+                        <path d="M8 18C8 15.7909 9.79086 14 12 14C14.2091 14 16 15.7909 16 18V22H8V18Z"
+                            fill="#efefef" />
+                    </svg>
+                </a>
+                <a href="courses.html?btn=courses" class="sidebar_item w100 flex between gap2 p1" id="courses">
+                    <span>دوره ها</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.4"
+                            d="M11.1723 21.6237L3.0027 17.9102C2.2211 17.555 2.22111 16.4448 3.0027 16.0895L11.1723 12.376C11.6981 12.137 12.3017 12.137 12.8275 12.376L20.9971 16.0895C21.7787 16.4448 21.7787 17.555 20.9971 17.9102L12.8275 21.6237C12.3017 21.8627 11.6981 21.8627 11.1723 21.6237Z"
+                            fill="#efefef" />
+                        <path
+                            d="M11.1723 16.6237L3.0027 12.9102C2.2211 12.555 2.22111 11.4448 3.0027 11.0895L11.1723 7.37604C11.6981 7.13702 12.3017 7.13702 12.8275 7.37604L20.9971 11.0895C21.7787 11.4448 21.7787 12.555 20.9971 12.9102L12.8275 16.6237C12.3017 16.8627 11.6981 16.8627 11.1723 16.6237Z"
+                            fill="#efefef" />
+                        <path opacity="0.4"
+                            d="M11.1723 11.6237L3.0027 7.91023C2.2211 7.55496 2.22111 6.44476 3.0027 6.08949L11.1723 2.37604C11.6981 2.13702 12.3017 2.13702 12.8275 2.37604L20.9971 6.08949C21.7787 6.44476 21.7787 7.55496 20.9971 7.91023L12.8275 11.6237C12.3017 11.8627 11.6981 11.8627 11.1723 11.6237Z"
+                            fill="#efefef" />
+                    </svg>
+                </a>
+                <a href="menus.html?btn=menus" class="sidebar_item w100 flex between gap2 p1" id="menus">
+                    <span>منو ها</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.4"
+                            d="M2 13C2 11.8954 2.89543 11 4 11H20C21.1046 11 22 11.8954 22 13V17C22 19.2091 20.2091 21 18 21H6C3.79086 21 2 19.2091 2 17V13Z"
+                            fill="#efefef" />
+                        <path d="M4 9C4 7.89543 4.89543 7 6 7H18C19.1046 7 20 7.89543 20 9V11H4V9Z" fill="#efefef" />
+                        <path opacity="0.4" d="M6 5C6 3.89543 6.89543 3 8 3H16C17.1046 3 18 3.89543 18 5V7H6V5Z"
+                            fill="#efefef" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.25 14C9.25 13.5858 9.58579 13.25 10 13.25H14C14.4142 13.25 14.75 13.5858 14.75 14C14.75 14.4142 14.4142 14.75 14 14.75H10C9.58579 14.75 9.25 14.4142 9.25 14Z"
+                            fill="#efefef" />
+                    </svg>
+                </a>
+                <a href="blogs.html?btn=blogs" class="sidebar_item w100 flex between gap2 p1" id="blogs">
+                    <span>مقاله ها</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.4"
+                            d="M19 2H5C3.89543 2 3 2.89543 3 4V20.1994C3 21.3008 4.14741 22.0266 5.14262 21.5548L7.16507 20.5959C7.69479 20.3447 8.30803 20.3386 8.84263 20.5792L11.1793 21.6307C11.7012 21.8655 12.2988 21.8655 12.8207 21.6307L15.1574 20.5792C15.692 20.3386 16.3052 20.3447 16.8349 20.5959L18.8574 21.5548C19.8526 22.0266 21 21.3008 21 20.1994V4C21 2.89543 20.1046 2 19 2Z"
+                            fill="#efefef" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7.25 7C7.25 6.58579 7.58579 6.25 8 6.25H12C12.4142 6.25 12.75 6.58579 12.75 7C12.75 7.41421 12.4142 7.75 12 7.75H8C7.58579 7.75 7.25 7.41421 7.25 7ZM7.25 11C7.25 10.5858 7.58579 10.25 8 10.25H16C16.4142 10.25 16.75 10.5858 16.75 11C16.75 11.4142 16.4142 11.75 16 11.75H8C7.58579 11.75 7.25 11.4142 7.25 11ZM7.25 15C7.25 14.5858 7.58579 14.25 8 14.25H16C16.4142 14.25 16.75 14.5858 16.75 15C16.75 15.4142 16.4142 15.75 16 15.75H8C7.58579 15.75 7.25 15.4142 7.25 15Z"
+                            fill="#efefef" />
+                    </svg>
+                </a>
+                <a href="users.html?btn=users" class="sidebar_item w100 flex between gap2 p1" id="users">
+                    <span>کاربران</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.4"
+                            d="M22 12C22 15.0134 20.6672 17.7154 18.5588 19.5488C16.8031 21.0756 14.5095 22 12 22C9.49052 22 7.19694 21.0756 5.44117 19.5488C3.33285 17.7154 2 15.0134 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                            fill="#efefef" />
+                        <circle cx="12" cy="10" r="3" fill="#efefef" />
+                        <path
+                            d="M18.5588 19.5488C17.5654 16.8918 15.0036 15 12 15C8.99637 15 6.43459 16.8918 5.44116 19.5488C7.19693 21.0756 9.49052 22 12 22C14.5095 22 16.8031 21.0756 18.5588 19.5488Z"
+                            fill="#efefef" />
+                    </svg>
+                </a>
+                <a href="category.html?btn=category" class="sidebar_item w100 flex between gap2 p1" id="category">
+                    <span>دسته بندی ها</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.4"
+                            d="M8 6C8 3.79086 9.79086 2 12 2H18C20.2092 2 22 3.79086 22 6V12C22 14.2091 20.2092 16 18 16H12C9.79086 16 8 14.2091 8 12V6Z"
+                            fill="#efefef" />
+                        <path
+                            d="M2 12C2 9.79086 3.79086 8 6 8H12C14.2092 8 16 9.79086 16 12V18C16 20.2091 14.2092 22 12 22H6C3.79086 22 2 20.2091 2 18V12Z"
+                            fill="#efefef" />
+                    </svg>
+                </a>
+                <a data-link="?btn=notifications" href="notifications.html?btn=notifications" class="sidebar_item w100 flex between gap2 p1"
+                    id="notifications">
+                    <span>پیغام ها</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 21C13.385 21 14.5633 20.1652 15 19H9C9.43668 20.1652 10.615 21 12 21Z"
+                            fill="#efefef" />
+                        <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd"
+                            d="M13.6896 3.75403C13.274 3.29116 12.671 3 12 3C10.7463 3 9.73005 4.01629 9.73005 5.26995V5.37366C7.58766 6.10719 6.0016 7.85063 5.76046 9.97519L5.31328 13.9153C5.23274 14.6249 4.93344 15.3016 4.44779 15.8721C3.35076 17.1609 4.39443 19 6.22281 19H17.7772C19.6056 19 20.6492 17.1609 19.5522 15.8721C19.0666 15.3016 18.7673 14.6249 18.6867 13.9153L18.2395 9.97519C18.2333 9.92024 18.2262 9.86556 18.2181 9.81113C17.8341 9.93379 17.4248 10 17 10C14.7909 10 13 8.20914 13 6C13 5.16744 13.2544 4.3943 13.6896 3.75403Z"
+                            fill="#efefef" />
+                        <circle cx="17" cy="6" r="3" fill="#efefef" />
+                    </svg>
+                </a> 
+                <a href="tickets.html?btn=tickets" class="sidebar_item w100 flex between gap2 p1" id="tickets">
+                    <span>تیکت ها</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.4"
+                            d="M2 17C2 19.2091 3.79086 21 6 21H10H18C20.2091 21 22 19.2091 22 17V16C22 15.4477 21.54 15.0163 21.0181 14.8356C19.8435 14.4289 19 13.313 19 12C19 10.687 19.8435 9.57105 21.0181 9.16437C21.54 8.98368 22 8.55228 22 8V7C22 4.79086 20.2091 3 18 3H10H6C3.79086 3 2 4.79086 2 7V8C2 8.55228 2.46 8.98368 2.98189 9.16437C4.15653 9.57105 5 10.687 5 12C5 13.313 4.15653 14.4289 2.98189 14.8356C2.46 15.0163 2 15.4477 2 16V17Z"
+                            fill="#efefef" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10 5.25C10.4142 5.25 10.75 5.58579 10.75 6V8C10.75 8.41421 10.4142 8.75 10 8.75C9.58579 8.75 9.25 8.41421 9.25 8V6C9.25 5.58579 9.58579 5.25 10 5.25Z"
+                            fill="#efefef" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10 15.25C10.4142 15.25 10.75 15.5858 10.75 16V18C10.75 18.4142 10.4142 18.75 10 18.75C9.58579 18.75 9.25 18.4142 9.25 18V16C9.25 15.5858 9.58579 15.25 10 15.25Z"
+                            fill="#efefef" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10 10.25C10.4142 10.25 10.75 10.5858 10.75 11V13C10.75 13.4142 10.4142 13.75 10 13.75C9.58579 13.75 9.25 13.4142 9.25 13V11C9.25 10.5858 9.58579 10.25 10 10.25Z"
+                            fill="#efefef" />
+                    </svg>
+                </a>
+            </ul>
+        </section>
+        <section class="full-container_left p2">
+            <div class="main-cms w100 h100 flex column gap3"></div>
+        </section>
+    </div>
+
+    <script src="./../js/loader.js"></script>
+    <script src="./../js/panel/function/shared.js" type="module"></script>
+    <script src="./../js/panel/index.js" type="module"></script>
+</body>
+
+</html>

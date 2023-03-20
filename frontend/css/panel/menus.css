@@ -1,0 +1,90 @@
+@import url("./../font.css");
+@import url("./../variables.css");
+
+@import url('./../loader.css');
+
+@import url("./../defualt.css");
+
+@import url("./panel.css");
+
+/* new course */
+.new-menu_input,
+.new-menu_parent {
+    background: var(--sec-color);
+    border: 1px solid var(--white-color);
+    border-radius: 0.5rem;
+}
+
+.new-menu_input::placeholder {
+    color: var(--white-color);
+}
+
+.new-menu_input:focus,
+.new-menu_parent:hover {
+    border-color: var(--primary-color);
+}
+
+.new-menu_parent{
+    cursor: pointer;
+}
+
+.new-menu_submit {
+    background: none;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 0.5rem;
+}
+
+.new-menu_submit:hover {
+    background: var(--primary-color);
+    color: var(--dark-color);
+}
+/* new course */
+
+/* menus list */
+.menus-table td {
+    text-align: center;
+}
+
+.menus-table thead tr {
+    background-color: var(--dark-color);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.menus-table thead th {
+    font-weight: lighter;
+}
+
+.menus-table tbody tr {
+    padding: 0.5rem 1rem;
+    border-bottom: 1px dashed var(--white-color);
+}
+
+.menus-table tbody tr td:nth-child(1),
+.menus-table thead tr th:nth-child(1),
+.menus-table tbody tr td:nth-child(2),
+.menus-table thead tr th:nth-child(2) {
+    width: 25%;
+}
+
+.menus-table tbody tr td:nth-child(3),
+.menus-table thead tr th:nth-child(3) {
+    width: 30%;
+}
+
+.menus-table tbody tr td:nth-child(4),
+.menus-table thead tr th:nth-child(4) {
+    width: 10%;
+}
+
+.menu-edit,
+.menu-delet {
+    cursor: pointer;
+}
+
+.menu-edit:hover,
+.menu-delet:hover {
+    transform: scale(1.2);
+}
+/* menus list */

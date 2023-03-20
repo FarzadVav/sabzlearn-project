@@ -1,0 +1,79 @@
+@import url("./../font.css");
+@import url("./../variables.css");
+
+@import url('./../loader.css');
+
+@import url("./../defualt.css");
+
+@import url("./panel.css");
+
+/* new category */
+.new-category_input {
+    background: var(--sec-color);
+    border: 1px solid var(--white-color);
+    border-radius: 0.5rem;
+}
+
+.new-category_input::placeholder {
+    color: var(--white-color);
+}
+
+.new-category_input:focus {
+    border-color: var(--primary-color);
+}
+
+.new-category_submit {
+    background: none;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 0.5rem;
+}
+
+.new-category_submit:hover {
+    background: var(--primary-color);
+    color: var(--dark-color);
+}
+/* new category */
+
+/* category list */
+.category-table td {
+    text-align: center;
+}
+
+.category-table thead tr {
+    background-color: var(--dark-color);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.category-table thead th {
+    font-weight: lighter;
+}
+
+.category-table tbody tr {
+    padding: 0.5rem 1rem;
+    border-bottom: 1px dashed var(--white-color);
+}
+
+.category-table tbody tr td,
+.category-table thead tr th {
+    width: 30%;
+}
+
+.category-table tbody tr td:nth-child(3),
+.category-table thead tr th:nth-child(3),
+.category-table tbody tr td:nth-child(4),
+.category-table thead tr th:nth-child(4) {
+    width: 10%;
+}
+
+.category-edit,
+.category-delet {
+    cursor: pointer;
+}
+
+.category-edit:hover,
+.category-delet:hover {
+    transform: scale(1.2);
+}
+/* menus list */

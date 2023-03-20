@@ -1,0 +1,62 @@
+@import url("./../font.css");
+@import url("./../variables.css");
+
+@import url('./../loader.css');
+
+@import url("./../defualt.css");
+
+@import url("./panel.css");
+
+/* users list */
+.users-table td {
+    text-align: center;
+}
+
+.users-table thead tr {
+    background-color: var(--dark-color);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.users-table thead th {
+    font-weight: lighter;
+}
+
+.users-table tbody tr {
+    padding: 0.5rem 1rem;
+    border-bottom: 1px dashed var(--white-color);
+}
+
+.users-table tbody tr td:nth-child(1),
+.users-table thead tr th:nth-child(1),
+.users-table tbody tr td:nth-child(2),
+.users-table thead tr th:nth-child(2),
+.users-table tbody tr td:nth-child(3),
+.users-table thead tr th:nth-child(3) {
+    width: 15%;
+}
+
+.users-table tbody tr td:nth-child(4),
+.users-table thead tr th:nth-child(4) {
+    width: 25%;
+}
+
+.users-table tbody tr td:nth-child(5),
+.users-table thead tr th:nth-child(5),
+.users-table tbody tr td:nth-child(6),
+.users-table thead tr th:nth-child(6),
+.users-table tbody tr td:nth-child(7),
+.users-table thead tr th:nth-child(7) {
+    width: 10%;
+}
+
+.user-edit,
+.user-delet {
+    cursor: pointer;
+}
+
+.user-edit:hover,
+.user-delet:hover {
+    transform: scale(1.2);
+}
+/* menus list */

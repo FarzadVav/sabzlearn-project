@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سبزلرن | صفحه دوره</title>
+    <link rel="stylesheet" href="css/course.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <section class="spinner-wrapper">
+        <div class="spinner"></div>
+    </section>
+
+    <!-- modal share course -->
+    <section class="modal-share-course">
+        <div class="modal-share-course_main flex column gap2">
+            <div class="modal-share-course_container flex">
+                <div class="Qr-loader"></div>
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=salam"
+                 alt="QR" class="modal-share-course_container_Qr">
+            </div>
+            <input type="text" class="modal-share-course_input mt2" value="https://p'sorgj;fjg;oashg;ohsg;hg;joha;ha;goahgf;waohe">
+            <button class="modal-share-course_copy-btn">کپی</button>
+            <button class="modal-share-course_cancel-btn">انصراف</button>
+        </div>
+    </section>
+    <!-- modal share course end -->
+    
+    <!-- mobile menu -->
+    <section class="mobile-menu p2">
+        <div class="mobile-menu_bottom flex p2">
+            <ul class="mobile-menu_list w100 flex column gap3">
+                <li class="mibole-menu_item flex w100" id="mobile-all-course">
+                    <a href="category.html?cat=all" class="mobile-menu_link flex w100">همه دوره ها</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- mobile menu end -->
+
+    <!-- header -->
+    <div class="header w100 p2">
+        <div class="navbar w100 flex p2">
+            <i class="bi bi-justify active-mobile-menu" id="mobile-menu"></i>
+            <i class="bi bi-x-lg" id="close-mobile-menu"></i>
+
+            <a href="index.html" class="flex">
+                <img src="images/logos/logo-one-copy.png" alt="sabzlearn logo" class="navbar_logo">
+            </a>
+            <ul class="navbar_list-right flex gap3">
+                <li class="navbar_list-right_item flex gap1" id="all-course">
+                    <a href="category.html?cat=all" class="navbar_list-right_item_link" id="all-course_link">همه دوره ها</a>
+                </li>
+            </ul>
+
+            <ul class="navbar_list-left flex">
+                <li class="navbar_list-left_item flex" id="navbar-account">
+                    <a href="#" class="navbar_list-left_item_link flex gap2" id="navbar-account_username">
+                        فرزاد وحدتی نژاد
+                    </a>
+
+                    <ul class="navbar-left_submenu flex column align-strat gap1" id="submenu-account">
+                        <li class="navbar-left_submenu_item" id="submenu-account_item">
+                            <a href="#" class="navbar-left_submenu_item_link">داشبورد کاربری</a>
+                        </li>
+                        <li class="navbar-left_submenu_item" id="submenu-account_item">
+                            <a href="#" class="navbar-left_submenu_item_link">سبد خرید</a>
+                        </li>
+                        <li class="navbar-left_submenu_item" id="submenu-account_item">
+                            <a href="#" class="navbar-left_submenu_item_link">دوره های خریداری شده</a>
+                        </li>
+                        <li class="navbar-left_submenu_item" id="submenu-account_item">
+                            <a href="#" class="navbar-left_submenu_item_link">تیکت پشتیبانی</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="navbar_list-left_item flex" id="register-user">
+                    <a href="register.html" class="navbar_list-left_item_link flex gap2">
+                        ثبت نام / ورود
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- header end -->
+
+    <!-- breadcrumb -->
+    <section class="breadcrumb-container mt1">
+        <div class="breadcrumb flex gap3 p2">
+            <a href="index.html" class="breadcrumb_home-link">
+                <i class="bi-house-fill breadcrumb_home-link_icon flex"></i>
+            </a>
+            <ul class="breadcrumb_list flex">
+                <li class="breadcrumb_list_item">
+                    <i class="bi-chevron-left min-icon breadcrumb_list_icon"></i>
+                    <a href="#" class="breadcrumb_list_link">آموزش برنامه نویسی فرانت اند</a>
+                </li>
+                <li class="breadcrumb_list_item">
+                    <i class="bi-chevron-left min-icon breadcrumb_list_icon"></i>
+                    <a href="#" class="breadcrumb_list_link">آموزش پروژه محور REACT JS</a>
+                </li>
+                <li class="breadcrumb_list_item">
+                    <i class="bi-chevron-left min-icon breadcrumb_list_icon"></i>
+                    <a href="#" class="breadcrumb_list_link">نظرات</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- breadcrumb end -->
+
+    <!-- course main info -->
+    <div class="container mt2">
+        <section class="course-info w100 flex align-strat">
+            <div class="course-info_desc flex column align-strat gap2 p3">
+                <a href="#" class="course-info_desc_category"></a>
+                <h1 class="course-info_desc_name-course"></h1>
+                <p class="course-info_desc_text text-jus my3"></p>
+                <div class="course-info_desc_share flex gap4">
+                    <a href="#">
+                        <i class="bi-share-fill course-info_desc_share-icon big-icon" id="share-course"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi-telegram course-info_desc_tel-icon big-icon"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi-instagram course-info_desc_insta-icon big-icon"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="course-info_intro p3">
+                <!-- https://tech.sabzlearn.ir/uploads/ce01010101it/reactjs/01.mp4?_=1 -->
+                <video src="" controls class="course-info_intro_video"></video>
+                <img src="images/logos/Picsart_23-02-11_18-00-06-616.png" alt="arrow to course" class="arrow-to-course">
+            </div>
+        </section>
+    </div>
+    <!-- course main info end -->
+
+    <!-- main course -->
+    <div class="container mt3">
+        <section class="main-course w100 flex between gap3 align-strat">
+            <div class="main-course_aboute flex column align-strat gap3">
+                <h3 class="main-course_aboute_title title-archive">دوره پروژه محور REACT JS چه دوره ای هست؟</h3>
+                <p class="main-course_aboute_text my1 text-jus">
+                    حدود 40 ساعت آموزش جامع و تخصصی ری اکت!  شما در دوره آموزش ری اکت ReactJS ، این کتابخانه قدرتمند و پر استفاده جاوا اسکریپت را به صورت کاملا پروژه محور و کاربردی یاد میگیرید!
+                    ری اکت گل سرسبد فرانت اند محسوب میشود،اگر دوره react را ببینید، بازار کار فرانت اند پیشنهادهای بسیار شگفت انگیزی برای شما خواهد داشت! در این دوره شما آموزش ری اکت رابر اساس تجربیات مدرس در دنیای واقعی و کار با شرکت های مختلف ایرانی یاد می گیرید و در دوره اموزش ری اکت مدرس دوره از نقطه صفر تا رسیدن شما به مرحله پیاده سازی نمونه کار، طراحی رزومه و … استخدام همراه شما خواهد بود. (به این معنی که تا پس از این دوره استخدام نشوید، ما شما را رها نمیکنیم!)
+                    آموزش ری اکت و نمونه کارها و رزومه شما و خیلی از موارد دیگه توسط مدرس بررسی، راهنمایی و رفع اشکال خواهد شد تا شما عزیزان بتوانید نهایت خروجی را از این دوره به دست آورده و بعد از گذروندن این دوره وارد بازار کار شده و کسب درآمد کنید.
+                    پس اگر به HTML,CSS و Javascript تسلط داری، وقتشه که با آموزش ری اکت تیرخلاص رو بزنی و خودتو به همه اثبات کنی! برو بریم
+                </p>
+                <img src="images/info/1.gif" alt="course aboute" class="main-course_aboute_img">
+                <p class="main-course_aboute_text my1 text-jus">
+                    حدود 40 ساعت آموزش جامع و تخصصی ری اکت!  شما در دوره آموزش ری اکت ReactJS ، این کتابخانه قدرتمند و پر استفاده جاوا اسکریپت را به صورت کاملا پروژه محور و کاربردی یاد میگیرید!
+                    ری اکت گل سرسبد فرانت اند محسوب میشود،اگر دوره react را ببینید، بازار کار فرانت اند پیشنهادهای بسیار شگفت انگیزی برای شما خواهد داشت! در این دوره شما آموزش ری اکت رابر اساس تجربیات مدرس در دنیای واقعی و کار با شرکت های مختلف ایرانی یاد می گیرید و در دوره اموزش ری اکت مدرس دوره از نقطه صفر تا رسیدن شما به مرحله پیاده سازی نمونه کار، طراحی رزومه و … استخدام همراه شما خواهد بود. (به این معنی که تا پس از این دوره استخدام نشوید، ما شما را رها نمیکنیم!)
+                </p>
+                <img src="images/info/2.jpg" alt="course aboute" class="main-course_aboute_img">
+                <p class="main-course_aboute_text my1 text-jus">
+                    حدود 40 ساعت آموزش جامع و تخصصی ری اکت!  شما در دوره آموزش ری اکت ReactJS ، این کتابخانه قدرتمند و پر استفاده جاوا اسکریپت را به صورت کاملا پروژه محور و کاربردی یاد میگیرید!
+                    ری اکت گل سرسبد فرانت اند محسوب میشود،اگر دوره react را ببینید، بازار کار فرانت اند پیشنهادهای بسیار شگفت انگیزی برای شما خواهد داشت! در این دوره شما آموزش ری اکت رابر اساس تجربیات مدرس در دنیای واقعی و کار با شرکت های مختلف ایرانی یاد می گیرید و در دوره اموزش ری اکت مدرس دوره از نقطه صفر تا رسیدن شما به مرحله پیاده سازی نمونه کار، طراحی رزومه و … استخدام همراه شما خواهد بود. (به این معنی که تا پس از این دوره استخدام نشوید، ما شما را رها نمیکنیم!)
+                    آموزش ری اکت و نمونه کارها و رزومه شما و خیلی از موارد دیگه توسط مدرس بررسی، راهنمایی و رفع اشکال خواهد شد تا شما عزیزان بتوانید نهایت خروجی را از این دوره به دست آورده و بعد از گذروندن این دوره وارد بازار کار شده و کسب درآمد کنید.
+                    پس اگر به HTML,CSS و Javascript تسلط داری، وقتشه که با آموزش ری اکت تیرخلاص رو بزنی و خودتو به همه اثبات کنی! برو بریم
+                </p>
+                <div class="main-course_aboute_con-links flex gap3">
+                    <a href="#" class="main-course_aboute_Links">دانلود همه گانی ویدیو ها</a>
+                    <a href="#" class="main-course_aboute_Links">دانلود همه گانی پیوست ها</a>
+                </div>
+            </div>
+
+            <div class="main-course_data flex wrap gap2 p1 py3">
+                <div class="main-course_data_box flex start gap3 px2">
+                    <svg class="main-course_data_box_icon" width="2.5rem" height="2.5rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.0095 2.85114C14.2552 2.85114 16.0757 4.67162 16.0757 6.91731C16.0757 9.163 14.2552 10.9835 12.0095 10.9835C9.76385 10.9835 7.94336 9.163 7.94336 6.91731C7.94336 4.67162 9.76385 2.85114 12.0095 2.85114Z"
+                            stroke="#efefef" stroke-width="1.7022" />
+                        <path
+                            d="M5.93745 17.5707L5.5386 18.9382C5.2162 20.0435 6.04522 21.1489 7.19665 21.1489H16.8226C17.974 21.1489 18.803 20.0435 18.4806 18.9382L18.0818 17.5707C17.2946 14.8719 14.8208 13.0165 12.0096 13.0165C9.19842 13.0165 6.72458 14.8719 5.93745 17.5707Z"
+                            stroke="#2ED573" stroke-width="1.7022" />
+                    </svg>
+                    <span class="main-course_data_user-count min-icon flex" id="course-users-count"> دانشجو</span>
+                </div>
+                <div class="main-course_data_box flex start gap3 px2">
+                    <svg class="main-course_data_box_icon" width="2.5rem" height="2.5rem" viewBox="0 0 24 24" fill="none">
+                        <path d="M12.5 7.5L5.92819 14.0718C5.71566 14.2843 5.60939 14.3906 5.53953 14.5212C5.46966 14.6517 5.44019 14.7991 5.38124 15.0938L4.64709 18.7646C4.58057 19.0972 4.5473 19.2635 4.64191 19.3581C4.73652 19.4527 4.90283 19.4194 5.23544 19.3529L8.90621 18.6188C9.20093 18.5598 9.3483 18.5303 9.47885 18.4605C9.60939 18.3906 9.71566 18.2843 9.92819 18.0718L16.5 11.5L12.5 7.5Z" fill="#2ED573"/>
+                        <path d="M5.95396 19.38L5.95397 19.38L5.9801 19.3734L5.98012 19.3734L8.60809 18.7164C8.62428 18.7124 8.64043 18.7084 8.65654 18.7044C8.87531 18.65 9.08562 18.5978 9.27707 18.4894C9.46852 18.381 9.62153 18.2275 9.7807 18.0679C9.79242 18.0561 9.80418 18.0444 9.81598 18.0325L17.0101 10.8385L17.0101 10.8385L17.0369 10.8117C17.3472 10.5014 17.6215 10.2272 17.8128 9.97638C18.0202 9.70457 18.1858 9.39104 18.1858 9C18.1858 8.60896 18.0202 8.29543 17.8128 8.02361C17.6215 7.77285 17.3472 7.49863 17.0369 7.18835L17.01 7.16152L16.8385 6.98995L16.8117 6.96314C16.5014 6.6528 16.2272 6.37853 15.9764 6.1872C15.7046 5.97981 15.391 5.81421 15 5.81421C14.609 5.81421 14.2954 5.97981 14.0236 6.1872C13.7729 6.37853 13.4986 6.65278 13.1884 6.96311L13.1615 6.98995L5.96745 14.184C5.95565 14.1958 5.94386 14.2076 5.93211 14.2193C5.77249 14.3785 5.61904 14.5315 5.51064 14.7229C5.40225 14.9144 5.34999 15.1247 5.29562 15.3435C5.29162 15.3596 5.28761 15.3757 5.28356 15.3919L4.62003 18.046C4.61762 18.0557 4.61518 18.0654 4.61272 18.0752C4.57411 18.2293 4.53044 18.4035 4.51593 18.5518C4.49978 18.7169 4.50127 19.0162 4.74255 19.2574C4.98383 19.4987 5.28307 19.5002 5.44819 19.4841C5.59646 19.4696 5.77072 19.4259 5.92479 19.3873C5.9346 19.3848 5.94433 19.3824 5.95396 19.38Z" stroke="#2ED573" stroke-width="1.2"/>
+                        <path d="M12.5 7.5L16.5 11.5" stroke="#efefef" stroke-width="1.2"/>
+                    </svg>                      
+                    <span class="main-course_data_user-count min-icon text-center" id="course-teacher"></span>
+                </div>
+                <div class="main-course_data_box flex start gap3 px2">
+                    <svg class="main-course_data_box_icon" width="2.5rem" height="2.5rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.3733 4.48999H4.62677C3.60873 4.48999 2.78345 5.31527 2.78345 6.33331V15.5499C2.78345 16.5679 3.60873 17.3932 4.62676 17.3932H7.39174H7.89722C8.31578 17.3932 8.72188 17.5357 9.04873 17.7971L10.8485 19.237C11.5217 19.7756 12.4783 19.7756 13.1516 19.237L14.9513 17.7971C15.2782 17.5357 15.6843 17.3932 16.1029 17.3932H16.6083H19.3733C20.3913 17.3932 21.2166 16.5679 21.2166 15.5499V6.33331C21.2166 5.31527 20.3913 4.48999 19.3733 4.48999Z" stroke="#2ED573" stroke-width="1.56682" stroke-linecap="round"/>
+                        <circle cx="9.08953" cy="10.7961" r="1.45525" fill="#efefef"/>
+                        <circle cx="14.9106" cy="10.7961" r="1.45525" fill="#efefef"/>
+                    </svg>
+                    <span class="main-course_data_user-count min-icon" id="course-comment-count"> نطر</span>
+                </div>
+                <div class="main-course_data_box flex start gap3 px2">
+                    <svg class="main-course_data_box_icon" width="2.5rem" height="2.5rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.0001 2.84436C17.0566 2.84436 21.1557 6.94347 21.1557 12C21.1557 17.0565 17.0566 21.1556 12.0001 21.1556C6.9436 21.1556 2.84448 17.0565 2.84448 12C2.84448 6.94347 6.9436 2.84436 12.0001 2.84436Z" stroke="#2ED573" stroke-width="1.7" stroke-linecap="round"/>
+                        <path d="M12 2.84436V4.67548" stroke="#2ED573" stroke-width="1.7" stroke-linecap="round"/>
+                        <path d="M12 19.3245V21.1556" stroke="#2ED573" stroke-width="1.7" stroke-linecap="round"/>
+                        <path d="M21.1555 12L19.3244 12" stroke="#2ED573" stroke-width="1.7" stroke-linecap="round"/>
+                        <path d="M4.67554 12L2.84441 12" stroke="#2ED573" stroke-width="1.7" stroke-linecap="round"/>
+                        <path d="M10.4817 12.29L12 9.2533L13.5184 12.29C14.0827 13.4187 13.262 14.7467 12 14.7467C10.7381 14.7467 9.91735 13.4187 10.4817 12.29Z" fill="#efefef"/>
+                    </svg>
+                    <span class="main-course_data_user-count min-icon" id="course-times-count"> ساعت</span>
+                </div>
+
+                <a href="#" class="main-course_data_buy_link flex p2"></a>
+
+                <ul class="main-course_data_data-list flex align-strat column gap2">
+                    <li class="main-course_data_data-list_item flex start gap2 px2">
+                        <i class="bi-question-circle main-course_data_data-list_icon big-icon"></i>
+                        وضعیت دوره :
+                        <span class="course-complate main-course_data-infos"></span>
+                    </li>
+                    <li class="main-course_data_data-list_item flex start gap2 px2">
+                        <i class="bi-person-video3 main-course_data_data-list_icon big-icon"></i>
+                        نوع پشتیبانی :
+                        <span class="course-support main-course_data-infos"></span>
+                    </li>
+                    <li class="main-course_data_data-list_item flex start gap2 px2">
+                        <i class="bi-calendar-check main-course_data_data-list_icon big-icon"></i>
+                        آخرین بروزرسانی :
+                        <span class="course-calendar main-course_data-infos"></span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <!-- main course end -->
+
+    <!-- download course -->
+    <div class="container mt3">
+        <h3 class="title-archive accordion-course-title">دانلود قسمت های دوره</h3>
+        <section class="accordion accordion-course">
+            <div class="accordion_head">
+                <span class="accordion_head_title accordion-course_name"></span>
+                <i class="bi-plus big-icon accordion_head_icon"></i>
+            </div>
+            <div class="accordion_content course-wrapper">
+            </div>
+        </section>
+    </div>
+    <!-- download course -->
+
+    <!-- add comment -->
+    <div class="container">
+        <section class="add-comment flex column align-strat w100 mt3">
+            <span class="add-comment_title">نظرتان راجبع به دوره را بنویسید.</span>
+            <span class="add-comment_user mt1 op05">
+                با حساب
+                <a href="#" class="add-comment_user_name">farzad_vahdati</a>
+                وارد شده شده اید.
+            </span>
+            <textarea class="add-comment_textarea my2 p2"></textarea>
+            <button class="add-comment_submit">ارسال نظر</button>
+        </section>
+    </div>
+    <!-- add comment end -->
+
+    <!-- comments -->
+    <div class="container mt3" id="comments-wrapper">
+    </div>
+    <!-- comments end -->
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer flex column between p3 pb0 mt3">
+            <div class="footer-line">
+                <div class="footer-line_arrow"></div>
+            </div>
+            <div class="footer_item flex">
+                <img src="images/logos/logo-one-copy.png" alt="sabzlearn logo" class="footer_item_logo">
+            </div>
+            <div class="footer_item w100 flex evenly py3">
+                <span class="footer_item_text">شبکه های اجتماعی</span>
+                <a href="#">
+                    <i class="bi-instagram footer_icon"></i>
+                </a>
+                <a href="#">
+                    <i class="bi-telegram footer_icon"></i>
+                </a>
+                <a href="#">
+                    <i class="bi-youtube footer_icon"></i>
+                </a>
+                <a href="#">
+                    <i class="bi-facebook footer_icon"></i>
+                </a>
+                <span class="footer_item_text">شبکه های اجتماعی</span>
+            </div>
+            <div class="footer_item flex">
+                <p class="footer_item_caption text-jus">
+                    وقتی تازه شروع به یادگیری برنامه نویسی کردم. یکی از مشکلاتی که در فرآیند یادگیری داشتم، کمبود آموزش
+                    های خوب با پشتیبانی قابل قبول بود که باعث شد اون موقع تصمیم بگیرم اگر روزی توانایی مالی و فنی قابل
+                    قبولی داشتم یک وب سایت برای حل این مشکل راه اندازی کنم! و خب امروز آکادمی آموزش برنامه نویسی سبزلرن
+                    به عنوان یک آکادمی خصوصی فعالیت میکنه و این به این معنی هست که هر مدرسی اجازه تدریس در اون رو نداره
+                    و باید از فیلترینگ های خاص آکادمی سبزلرن رد شه! این به این معنی هست که ما برامون فن بیان و نحوه
+                    تعامل مدرس با دانشجو بسیار مهمه! ما در آکادمی سبزلرن تضمین پشتیبانی خوب و با کیفیت رو به شما میدیم .
+                    چرا که مدرسین وب سایت سبزلرن حتی برای پشتیبانی دوره های رایگان شون هم هزینه دریافت میکنند و متعهد
+                    هستند که هوای کاربر های عزیز رو داشته باشند
+                </p>
+            </div>
+            <div class="footer_item w100 flex between mt2" id="footer-courses">
+            </div>
+            <div class="footer_bottom flex py2 mt2">
+                © کلیه حقوق برای <span class="footer_sabzlearn">سبز لرن</span> محفوظ است 1401
+            </div>
+        </footer>
+    </div>
+    <!-- footer end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/course.js" type="module"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/header.js" type="module"></script>
+    <script src="js/footer.js" type="module"></script>
+    <script src="js/accordion.js"></script>
+</body>
+
+</html>

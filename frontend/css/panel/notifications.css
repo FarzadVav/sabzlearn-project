@@ -1,0 +1,22 @@
+@import url("./../font.css");
+@import url("./../variables.css");
+
+@import url('./../loader.css');
+
+@import url("./../defualt.css");
+
+@import url("./panel.css");
+
+/* notifications */
+.notifications-title {
+    font-size: var(--h1);
+    line-height: var(--h1-line);
+    font-weight: lighter;
+}
+
+.notifications_item {
+    background-color: var(--dark-color);
+    border-radius: 0.5rem;
+    /* color: #f0d748; */
+}
+/* notifications */

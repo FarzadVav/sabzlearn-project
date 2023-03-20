@@ -1,0 +1,11 @@
+@font-face {
+    font-family: IRANSans;
+    src: url("../fonts/IRANSans/IRANSansWeb.ttf"),
+    url("../fonts/IRANSans/IRANSansWeb.woff");
+}
+
+@font-face {
+    font-family: IRANSans-Bold;
+    src: url("../fonts/IRANSans/IRANSansWeb_Bold.ttf"),
+    url("../fonts/IRANSans/IRANSansWeb_Bold.woff");
+}

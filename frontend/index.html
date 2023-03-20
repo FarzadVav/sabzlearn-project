@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سبزلرن | صفحه اصلی</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css" />
+    <!-- swiper -->
+</head>
+
+<body>
+
+    <section class="spinner-wrapper">
+        <div class="spinner"></div>
+    </section>
+
+    <!-- mobile menu -->
+    <section class="mobile-menu p2">
+        <div class="mobile-menu_bottom flex p2">
+            <ul class="mobile-menu_list w100 flex column gap3">
+                <li class="mibole-menu_item flex w100" id="mobile-all-course">
+                    <a href="category.html?cat=all" class="mobile-menu_link flex w100">همه دوره ها</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- mobile menu end -->
+
+    <!-- header -->
+    <div class="header w100 p2">
+        <div class="navbar w100 flex p2">
+            <i class="bi bi-justify active-mobile-menu" id="mobile-menu"></i>
+            <i class="bi bi-x-lg" id="close-mobile-menu"></i>
+
+            <a href="index.html" class="flex">
+                <img src="images/logos/logo-one-copy.png" alt="sabzlearn logo" class="navbar_logo">
+            </a>
+            <ul class="navbar_list-right flex gap3">
+                <li class="navbar_list-right_item flex gap1" id="all-course">
+                    <a href="category.html?cat=all" class="navbar_list-right_item_link" id="all-course_link">همه دوره ها</a>
+                </li>
+            </ul>
+
+            <ul class="navbar_list-left flex">
+                <li class="navbar_list-left_item flex" id="navbar-account">
+                    <a href="#" class="navbar_list-left_item_link flex gap2" id="navbar-account_username">
+                        فرزاد وحدتی نژاد
+                    </a>
+
+                    <ul class="navbar-left_submenu flex column align-strat gap1" id="submenu-account">
+                        <li class="navbar-left_submenu_item" id="submenu-account_item">
+                            <a href="#" class="navbar-left_submenu_item_link">داشبورد کاربری</a>
+                        </li>
+                        <li class="navbar-left_submenu_item" id="submenu-account_item">
+                            <a href="#" class="navbar-left_submenu_item_link">سبد خرید</a>
+                        </li>
+                        <li class="navbar-left_submenu_item" id="submenu-account_item">
+                            <a href="#" class="navbar-left_submenu_item_link">دوره های خریداری شده</a>
+                        </li>
+                        <li class="navbar-left_submenu_item" id="submenu-account_item">
+                            <a href="#" class="navbar-left_submenu_item_link">تیکت پشتیبانی</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="navbar_list-left_item flex" id="register-user">
+                    <a href="register.html" class="navbar_list-left_item_link flex gap2">
+                        ثبت نام / ورود
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- header end -->
+
+    <!-- top landing -->
+    <section class="top-landing">
+        <div class="container top-landing_container flex h100">
+            <div class="top-landing_right flex align-strat column">
+                <div class="top-landing_right_circle1"></div>
+                <div class="top-landing_right_circle2"></div>
+                <div class="top-landing_desktop-circle1"></div>
+                <div class="top-landing_desktop-circle2"></div>
+                <h1 class="top-landing_right_title">آکادمی سبزلرن</h1>
+                <p class="top-landing_right_desc my2 text-jus">وقتی تازه شروع به یادگیری برنامه نویسی کردم. یکی از
+                    مشکلاتی که در فرآیند یادگیری داشتم، کمبود آموزش های خوب با پشتیبانی قابل قبول بود که باعث شد اون
+                    موقع تصمیم بگیرم اگر روزی توانایی مالی و فنی قابل قبولی داشتم یک وب سایت برای حل این مشکل راه اندازی
+                    کنم!</p>
+                <div class="top-landing_right_counters flex start gap3">
+                    <div class="top-landing_right_counters_box flex column">
+                        <span class="top-landing_right_count-courses">0</span> دوره آموزشی
+                    </div>
+                    <div class="top-landing_right_counters_box flex column">
+                        <span class="top-landing_right_count-watch-times">0</span> ساعت آموزش
+                    </div>
+                    <div class="top-landing_right_counters_box flex column">
+                        <span class="top-landing_right_count-users">0</span> کاربر فعال
+                    </div>
+                </div>
+            </div>
+            <div class="top-landing_left flex">
+                <div class="top-landing_left_circle1"></div>
+                <div class="top-landing_left_circle2"></div>
+                <div class="swiper top-landing_swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide top-landing_swiper_slide flex">
+                            <img src="images/img/realadmin.jpg" alt="top landing slides"
+                                class="top-landing_left_slides">
+                        </div>
+                        <div class="swiper-slide top-landing_swiper_slide flex">
+                            <img src="images/img/realproject.jpg" alt="top landing slides"
+                                class="top-landing_left_slides">
+                        </div>
+                        <div class="swiper-slide top-landing_swiper_slide flex">
+                            <img src="images/img/realupdate.jpg" alt="top landing slides"
+                                class="top-landing_left_slides">
+                        </div>
+                        <div class="swiper-slide top-landing_swiper_slide flex">
+                            <img src="images/img/yourcv.jpg" alt="top landing slides" class="top-landing_left_slides">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination top-landing_swiper_pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- top landing end -->
+
+    <!-- title archive -->
+    <div class="container flex between mt3">
+        <div class="flex align-strat column gap1 mx2">
+            <h6 class="title-archive">آخرین دوره ها</h6>
+            <span class="text-title-archive">ورودتان به سکوی پرتاب موفقیت...</span>
+        </div>
+        <a href="category.html?cat=all" class="all-product flex mx2">
+            همه دوره ها
+            <i class="bi-arrow-bar-left all-product_icon"></i>
+        </a>
+    </div>
+    <!-- title archive end -->
+
+    <!-- products -->
+    <div class="container flex">
+        <section class="product-list">
+        </section>
+    </div>
+    <!-- products end -->
+
+    <!-- title archive blog -->
+    <div class="container flex between mt3">
+        <div class="flex align-strat column gap1 mx2">
+            <h6 class="title-archive">آخرین مقالات</h6>
+            <span class="text-title-archive">ورودتان به سکوی پرتاب موفقیت...</span>
+        </div>
+        <a href="category-blogs.html" class="all-product flex mx2">
+            همه مقالات
+            <i class="bi-arrow-bar-left all-product_icon"></i>
+        </a>
+    </div>
+    <!-- title archive blog end -->
+
+    <!-- blogs -->
+    <div class="container flex">
+        <section class="blog-list">
+        </section>
+    </div>
+    <!-- blogs end -->
+
+    <!-- title before sell -->
+    <div class="container flex start mt3">
+        <div class="flex align-strat column gap1 mx2">
+            <h6 class="title-archive">دوره های در حال پیش فروش</h6>
+            <span class="text-title-archive">ورودتان به سکوی پرتاب موفقیت...</span>
+        </div>
+    </div>
+    <!-- title before sell -->
+
+    <!-- Slider main container -->
+    <div class="container flex between mt2">
+        <div class="swiper swiper-product">
+            <div class="swiper-wrapper" id="pre-sell-courses-container">
+            </div>
+        </div>
+    </div>
+    <!-- Slider main container end -->
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer flex column between p3 pb0 mt3">
+            <div class="footer-line">
+                <div class="footer-line_arrow"></div>
+            </div>
+            <div class="footer_item flex">
+                <img src="images/logos/logo-one-copy.png" alt="sabzlearn logo" class="footer_item_logo">
+            </div>
+            <div class="footer_item w100 flex evenly py3">
+                <span class="footer_item_text">شبکه های اجتماعی</span>
+                <a href="#">
+                    <i class="bi-instagram footer_icon"></i>
+                </a>
+                <a href="#">
+                    <i class="bi-telegram footer_icon"></i>
+                </a>
+                <a href="#">
+                    <i class="bi-youtube footer_icon"></i>
+                </a>
+                <a href="#">
+                    <i class="bi-facebook footer_icon"></i>
+                </a>
+                <span class="footer_item_text">شبکه های اجتماعی</span>
+            </div>
+            <div class="footer_item flex">
+                <p class="footer_item_caption text-jus">
+                    وقتی تازه شروع به یادگیری برنامه نویسی کردم. یکی از مشکلاتی که در فرآیند یادگیری داشتم، کمبود آموزش
+                    های خوب با پشتیبانی قابل قبول بود که باعث شد اون موقع تصمیم بگیرم اگر روزی توانایی مالی و فنی قابل
+                    قبولی داشتم یک وب سایت برای حل این مشکل راه اندازی کنم! و خب امروز آکادمی آموزش برنامه نویسی سبزلرن
+                    به عنوان یک آکادمی خصوصی فعالیت میکنه و این به این معنی هست که هر مدرسی اجازه تدریس در اون رو نداره
+                    و باید از فیلترینگ های خاص آکادمی سبزلرن رد شه! این به این معنی هست که ما برامون فن بیان و نحوه
+                    تعامل مدرس با دانشجو بسیار مهمه! ما در آکادمی سبزلرن تضمین پشتیبانی خوب و با کیفیت رو به شما میدیم .
+                    چرا که مدرسین وب سایت سبزلرن حتی برای پشتیبانی دوره های رایگان شون هم هزینه دریافت میکنند و متعهد
+                    هستند که هوای کاربر های عزیز رو داشته باشند
+                </p>
+            </div>
+            <div class="footer_item w100 flex between mt2" id="footer-courses">
+            </div>
+            <div class="footer_bottom flex py2 mt2">
+                © کلیه حقوق برای <span class="footer_sabzlearn">سبز لرن</span> محفوظ است 1401
+            </div>
+        </footer>
+    </div>
+    <!-- footer end -->
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="js/index.js" type="module"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/header.js" type="module"></script>
+    <script src="js/footer.js" type="module"></script>
+</body>
+
+</html>

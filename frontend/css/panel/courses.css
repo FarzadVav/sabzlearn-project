@@ -1,0 +1,210 @@
+@import url("./../font.css");
+@import url("./../variables.css");
+
+@import url('./../loader.css');
+
+@import url("./../defualt.css");
+
+@import url("./panel.css");
+
+
+/* new course */
+.new-course_input,
+.new-course_status,
+.new-course_category,
+.new-course_file {
+    background: var(--sec-color);
+    border: 1px solid var(--white-color);
+    border-radius: 0.5rem;
+}
+
+.new-course_input::placeholder {
+    color: var(--white-color);
+}
+
+.new-course_input:focus,
+.new-course_status:hover,
+.new-course_category:hover,
+.new-course_file:hover {
+    border-color: var(--primary-color);
+}
+
+.new-course_status,
+.new-course_category {
+    cursor: pointer;
+}
+
+#new-course_file-input {
+    display: none;
+}
+
+.new-course_submit {
+    background: none;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 0.5rem;
+}
+
+.new-course_submit:hover {
+    background: var(--primary-color);
+    color: var(--dark-color);
+}
+
+/* new course */
+
+/* course list */
+.courses-table td {
+    text-align: center;
+}
+
+.courses-table thead tr {
+    background-color: var(--dark-color);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.courses-table thead th {
+    font-weight: lighter;
+}
+
+.courses-table tbody tr {
+    padding: 0.5rem 1rem;
+    border-bottom: 1px dashed var(--white-color);
+}
+
+.courses-table tbody tr td:nth-child(1),
+.courses-table thead tr th:nth-child(1) {
+    width: 25%;
+}
+
+.courses-table tbody tr td:nth-child(2),
+.courses-table thead tr th:nth-child(2) {
+    width: 20%;
+}
+
+.courses-table tbody tr td:nth-child(3),
+.courses-table thead tr th:nth-child(3),
+.courses-table tbody tr td:nth-child(4),
+.courses-table thead tr th:nth-child(4),
+.courses-table tbody tr td:nth-child(5),
+.courses-table thead tr th:nth-child(5) {
+    width: 15%;
+}
+
+.courses-table tbody tr td:nth-child(6),
+.courses-table thead tr th:nth-child(6),
+.courses-table tbody tr td:nth-child(7),
+.courses-table thead tr th:nth-child(7) {
+    width: 7%;
+}
+
+.course-edit,
+.course-delet {
+    cursor: pointer;
+}
+
+.course-edit:hover,
+.course-delet:hover {
+    transform: scale(1.2);
+}
+
+/* course list */
+
+/* new session */
+.new-session_input,
+.new-session_access,
+.new-session_course,
+.new-session_file {
+    background: var(--sec-color);
+    border: 1px solid var(--white-color);
+    border-radius: 0.5rem;
+}
+
+.new-session_input::placeholder {
+    color: var(--white-color);
+}
+
+.new-session_input:focus,
+.new-session_access:hover,
+.new-session_course:hover,
+.new-session_file:hover {
+    border-color: var(--primary-color);
+}
+
+.new-session_access,
+.new-session_course {
+    cursor: pointer;
+}
+
+#new-session_file-input {
+    display: none;
+}
+
+.new-session_submit {
+    background: none;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 0.5rem;
+}
+
+.new-session_submit:hover {
+    background: var(--primary-color);
+    color: var(--dark-color);
+}
+
+/* new session */
+
+/* session list */
+.session-table td {
+    text-align: center;
+}
+
+.session-table thead tr {
+    background-color: var(--dark-color);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.session-table thead th {
+    font-weight: lighter;
+}
+
+.session-table tbody tr {
+    padding: 0.5rem 1rem;
+    border-bottom: 1px dashed var(--white-color);
+}
+
+.session-table tbody tr td:nth-child(1),
+.session-table thead tr th:nth-child(1),
+.session-table tbody tr td:nth-child(2),
+.session-table thead tr th:nth-child(2) {
+    width: 25%;
+}
+
+.session-table tbody tr td:nth-child(3),
+.session-table thead tr th:nth-child(3),
+.session-table tbody tr td:nth-child(4),
+.session-table thead tr th:nth-child(4),
+.session-table tbody tr td:nth-child(5),
+.session-table thead tr th:nth-child(5) {
+    width: 12%;
+}
+
+.session-table tbody tr td:nth-child(6),
+.session-table thead tr th:nth-child(6),
+.session-table tbody tr td:nth-child(7),
+.session-table thead tr th:nth-child(7) {
+    width: 7%;
+}
+
+.session-edit,
+.session-delet {
+    cursor: pointer;
+}
+
+.session-edit:hover,
+.session-delet:hover {
+    transform: scale(1.2);
+}
+
+/* session list */

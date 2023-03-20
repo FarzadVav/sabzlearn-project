@@ -1,0 +1,118 @@
+@import url("./font.css");
+@import url("./variables.css");
+
+@import url('./loader.css');
+@import url("./header.css");
+@import url("./breadcrumb.css");
+@import url("./product-box.css");
+@import url("./pagination.css");
+@import url("./footer.css");
+
+@import url("./defualt.css");
+
+/* filter category */
+.filter-category:hover .filter-category_box {
+    opacity: 0.3;
+}
+
+.filter-category_box {
+    background-color: var(--sec-color);
+    width: 49%;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 150ms linear;
+}
+
+.filter-category .filter-category_box:hover {
+    opacity: 1;
+}
+
+.filter-category_box:nth-child(1) {
+    color: #a559ec;
+}
+
+.filter-category_box:nth-child(2) {
+    color: goldenrod;
+}
+
+.filter-category_box:nth-child(3) {
+    color: #67b9ec;
+}
+
+.filter-category_box:nth-child(4) {
+    color: coral;
+}
+
+.filter-category_box_icon {
+    pointer-events: none;
+}
+/* filter category end */
+
+/* search box */
+.search-box {
+    height: 50px;
+    position: relative;
+}
+
+.search-box_submit {
+    background-color: var(--dark-color);
+    width: 100px;
+    height: 100%;
+    border: 2px solid var(--sec-color);
+    border-radius: 0 0.5rem 0.5rem 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.search-box_submit:hover {
+    background: var(--sec-color);
+}
+
+.search-box_input {
+    background: none;
+    height: 100%;
+    padding-right: 120px;
+    border: 2px solid var(--sec-color);
+    border-radius: 0.5rem;
+    z-index: 1;
+}
+
+.search-box_input::placeholder {
+    color: #efefef30;
+}
+
+/* search box */
+
+/* product-category-list */
+.product-category-list {
+    border: 2px dashed var(--sec-color);
+    border-radius: 0.5rem;
+}
+/* product-category-list end */
+
+/* responsive */
+@media only screen and (max-width: 768px) {
+    .filter-category_box {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .select-category_submenu {
+        padding: 0;
+    }
+
+    .select-category_search-container {
+        width: 150px;
+        height: 35px;
+    }
+
+    .select-category_search-icon {
+        width: 20%;
+    }
+}
+/* responsive */

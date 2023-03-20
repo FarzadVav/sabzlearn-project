@@ -1,0 +1,123 @@
+@import url("./font.css");
+@import url("./variables.css");
+
+@import url('./loader.css');
+@import url("./header.css");
+@import url("./footer.css");
+
+@import url("./defualt.css");
+
+/* episode info */
+.episode-info_data {
+    background-color: var(--sec-color);
+    width: 60%;
+    height: 600px;
+    max-height: 600px;
+    border-radius: 1rem;
+}
+
+.episode-info_data_video {
+    width: 100%;
+    max-height: 350px;
+    border-radius: 1rem;
+}
+
+.episode-info_data_title {
+    font-size: var(--h3);
+    line-height: var(--h3-line);
+    font-weight: lighter;
+}
+
+.episode-info_data_download {
+    background-color: var(--sec-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    padding: var(--btn-padding-light);
+    border-radius: 0.5rem;
+}
+
+.episode-info_data_download:hover {
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+}
+
+.episode-info_data_next:hover,
+.episode-info_data_previos:hover {
+    transform: scale(1.15);
+}
+
+.episode-info_sidebar {
+    background-color: var(--sec-color);
+    width: 39%;
+    max-height: 600px;
+    border-radius: 1rem;
+    overflow-y: scroll;
+}
+
+.episode-info_sidebar::-webkit-scrollbar-track {
+    background: none;
+}
+
+.episode-info_sidebar_item {
+    padding: 1rem 0;
+    position: relative;
+}
+
+.episode-info_sidebar_item::after {
+    background: linear-gradient(to left, var(--dark-color), #00000000);
+    content: '';
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.episode-info_sidebar_link {
+    cursor: pointer;
+}
+
+.episode-info_sidebar_time {
+    user-select: none;
+}
+
+/* episode info */
+
+.course-forbidden {
+    opacity: 0.5;
+    user-select: none;
+    pointer-events: none;
+}
+
+/* responsive */
+@media only screen and (max-width: 992px) {
+
+    .episode-info_data,
+    .episode-info_sidebar {
+        height: 500px;
+        max-height: 500px;
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .episode-info {
+        flex-direction: column;
+    }
+
+    .episode-info_data,
+    .episode-info_sidebar {
+        width: 100%;
+        height: max-content;
+        max-height: max-content;
+    }
+
+    .episode-info_sidebar {
+        margin-top: 3rem;
+        overflow: visible;
+    }
+}
+
+@media only screen and (max-width: 576px) {}
+
+/* responsive */

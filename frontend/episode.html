@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سبزلرن | قسمت های دوره</title>
+    <link rel="stylesheet" href="css/episode.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css" />
+    <!-- swiper -->
+</head>
+
+<body>
+
+    <section class="spinner-wrapper">
+        <div class="spinner"></div>
+    </section>
+
+    <!-- mobile menu -->
+    <section class="mobile-menu p2">
+        <div class="mobile-menu_bottom flex p2">
+            <ul class="mobile-menu_list w100 flex column gap3">
+                <li class="mibole-menu_item flex w100" id="mobile-all-course">
+                    <a href="category.html?cat=all" class="mobile-menu_link flex w100">همه دوره ها</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- mobile menu end -->
+
+    <!-- header -->
+    <div class="header w100 p2">
+        <div class="navbar w100 flex p2">
+            <i class="bi bi-justify active-mobile-menu" id="mobile-menu"></i>
+            <i class="bi bi-x-lg" id="close-mobile-menu"></i>
+
+            <a href="index.html" class="flex">
+                <img src="images/logos/logo-one-copy.png" alt="sabzlearn logo" class="navbar_logo">
+            </a>
+            <ul class="navbar_list-right flex gap3">
+                <li class="navbar_list-right_item flex gap1" id="all-course">
+                    <a href="category.html?cat=all" class="navbar_list-right_item_link" id="all-course_link">همه دوره ها</a>
+                </li>
+            </ul>
+
+            <ul class="navbar_list-left flex">
+                <li class="navbar_list-left_item flex" id="navbar-account">
+                    <a href="#" class="navbar_list-left_item_link flex gap2" id="navbar-account_username">
+                        فرزاد وحدتی نژاد
+                    </a>
+
+                    <ul class="navbar-left_submenu flex column align-strat gap1" id="submenu-account">
+                        <li class="navbar-left_submenu_item" id="submenu-account_item">
+                            <a href="#" class="navbar-left_submenu_item_link">داشبورد کاربری</a>
+                        </li>
+                        <li class="navbar-left_submenu_item" id="submenu-account_item">
+                            <a href="#" class="navbar-left_submenu_item_link">سبد خرید</a>
+                        </li>
+                        <li class="navbar-left_submenu_item" id="submenu-account_item">
+                            <a href="#" class="navbar-left_submenu_item_link">دوره های خریداری شده</a>
+                        </li>
+                        <li class="navbar-left_submenu_item" id="submenu-account_item">
+                            <a href="#" class="navbar-left_submenu_item_link">تیکت پشتیبانی</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="navbar_list-left_item flex" id="register-user">
+                    <a href="register.html" class="navbar_list-left_item_link flex gap2">
+                        ثبت نام / ورود
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- header end -->
+
+    <!-- episode info -->
+    <div class="container mt3">
+        <section class="episode-info flex between align-strat">
+            <div class="episode-info_data flex column between p3">
+                <video src="" controls class="episode-info_data_video"></video>
+                <h1 class="episode-info_data_title mt2"></h1>
+                <a href="#" class="episode-info_data_download flex gap2 w100 my3">دانلود ویدئو</a>
+                <div class="flex between w100">
+                    <a href="#" class="episode-info_data_next">
+                        <svg width="30" height="30" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Iconly/Two-tone/Arrow---Right-Square" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                <g id="Arrow---Right-Square" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000) translate(2.000000, 2.000000)" stroke="#efefef" stroke-width="1.5">
+                                    <path d="M5.6659,19.25 L14.3349,19.25 C17.3549,19.25 19.2499,17.111 19.2499,14.084 L19.2499,5.916 C19.2499,2.889 17.3649,0.75 14.3349,0.75 L5.6659,0.75 C2.6359,0.75 0.7499,2.889 0.7499,5.916 L0.7499,14.084 C0.7499,17.111 2.6359,19.25 5.6659,19.25 Z" id="Stroke-1" opacity="0.400000006"></path>
+                                    <line x1="9.9999" y1="14.086" x2="9.9999" y2="5.914" id="Stroke-3"></line>
+                                    <polyline id="Stroke-5" points="13.7479 10.3223 9.9999 14.0863 6.2519 10.3223"></polyline>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                    <a href="#" class="episode-info_data_previos">
+                        <svg width="30" height="30" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Iconly/Two-tone/Arrow---Left-Square" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                <g id="Arrow---Left-Square" transform="translate(12.000000, 12.000000) rotate(-270.000000) translate(-12.000000, -12.000000) translate(2.000000, 2.000000)" stroke="#efefef" stroke-width="1.5">
+                                    <path d="M5.6659,19.25 L14.3349,19.25 C17.3549,19.25 19.2499,17.111 19.2499,14.084 L19.2499,5.916 C19.2499,2.889 17.3649,0.75 14.3349,0.75 L5.6659,0.75 C2.6359,0.75 0.7499,2.889 0.7499,5.916 L0.7499,14.084 C0.7499,17.111 2.6359,19.25 5.6659,19.25 Z" id="Stroke-1" opacity="0.400000006"></path>
+                                    <line x1="9.9999" y1="14.086" x2="9.9999" y2="5.914" id="Stroke-3"></line>
+                                    <polyline id="Stroke-5" points="13.7479 10.3223 9.9999 14.0863 6.2519 10.3223"></polyline>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="episode-info_sidebar p3">
+                <ul class="episode-info_sidebar_list w100 flex column">
+                </ul>
+            </div>
+        </section>
+    </div>
+    <!-- episode info -->
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer flex column between p3 pb0 mt3">
+            <div class="footer-line">
+                <div class="footer-line_arrow"></div>
+            </div>
+            <div class="footer_item flex">
+                <img src="images/logos/logo-one-copy.png" alt="sabzlearn logo" class="footer_item_logo">
+            </div>
+            <div class="footer_item w100 flex evenly py3">
+                <span class="footer_item_text">شبکه های اجتماعی</span>
+                <a href="#">
+                    <i class="bi-instagram footer_icon"></i>
+                </a>
+                <a href="#">
+                    <i class="bi-telegram footer_icon"></i>
+                </a>
+                <a href="#">
+                    <i class="bi-youtube footer_icon"></i>
+                </a>
+                <a href="#">
+                    <i class="bi-facebook footer_icon"></i>
+                </a>
+                <span class="footer_item_text">شبکه های اجتماعی</span>
+            </div>
+            <div class="footer_item flex">
+                <p class="footer_item_caption text-jus">
+                    وقتی تازه شروع به یادگیری برنامه نویسی کردم. یکی از مشکلاتی که در فرآیند یادگیری داشتم، کمبود آموزش
+                    های خوب با پشتیبانی قابل قبول بود که باعث شد اون موقع تصمیم بگیرم اگر روزی توانایی مالی و فنی قابل
+                    قبولی داشتم یک وب سایت برای حل این مشکل راه اندازی کنم! و خب امروز آکادمی آموزش برنامه نویسی سبزلرن
+                    به عنوان یک آکادمی خصوصی فعالیت میکنه و این به این معنی هست که هر مدرسی اجازه تدریس در اون رو نداره
+                    و باید از فیلترینگ های خاص آکادمی سبزلرن رد شه! این به این معنی هست که ما برامون فن بیان و نحوه
+                    تعامل مدرس با دانشجو بسیار مهمه! ما در آکادمی سبزلرن تضمین پشتیبانی خوب و با کیفیت رو به شما میدیم .
+                    چرا که مدرسین وب سایت سبزلرن حتی برای پشتیبانی دوره های رایگان شون هم هزینه دریافت میکنند و متعهد
+                    هستند که هوای کاربر های عزیز رو داشته باشند
+                </p>
+            </div>
+            <div class="footer_item w100 flex between mt2" id="footer-courses">
+            </div>
+            <div class="footer_bottom flex py2 mt2">
+                © کلیه حقوق برای <span class="footer_sabzlearn">سبز لرن</span> محفوظ است 1401
+            </div>
+        </footer>
+    </div>
+    <!-- footer end -->
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="js/episode.js" type="module"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/header.js" type="module"></script>
+    <script src="js/footer.js" type="module"></script>
+</body>
+
+</html>

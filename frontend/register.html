@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سبزلرن | ثبت نام و ورود</title>
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css" />
+    <!-- swiper -->
+</head>
+
+<body>
+    <section class="spinner-wrapper">
+        <div class="spinner"></div>
+    </section>
+
+    <!-- header -->
+    <div class="container header-register-sticky">
+        <header class="header-register w100 flex between py3">
+            <div class="header-register_right flex gap3">
+                <button class="header-register_right_sign-in active-header-register-btn" data-form="signIn">ثبت نام</button>
+                <button class="header-register_right_log-in" data-form="logIn">ورود</button>
+            </div>
+            <div class="header-register_left flex">
+                <a href="index.html">
+                    <svg class="header-register_left_icon" width="30px" height="30px" viewBox="0 0 24 24" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Iconly/Two-tone/Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <g id="Home" transform="translate(2.500000, 2.000000)" stroke="var(--primary-color)"
+                                stroke-width="1.5">
+                                <path
+                                    d="M6.65721519,18.7714023 L6.65721519,15.70467 C6.65719744,14.9246392 7.29311743,14.2908272 8.08101266,14.2855921 L10.9670886,14.2855921 C11.7587434,14.2855921 12.4005063,14.9209349 12.4005063,15.70467 L12.4005063,15.70467 L12.4005063,18.7809263 C12.4003226,19.4432001 12.9342557,19.984478 13.603038,20 L15.5270886,20 C17.4451246,20 19,18.4606794 19,16.5618312 L19,16.5618312 L19,7.8378351 C18.9897577,7.09082692 18.6354747,6.38934919 18.0379747,5.93303245 L11.4577215,0.685301154 C10.3049347,-0.228433718 8.66620456,-0.228433718 7.51341772,0.685301154 L0.962025316,5.94255646 C0.362258604,6.39702249 0.00738668938,7.09966612 0,7.84735911 L0,16.5618312 C0,18.4606794 1.55487539,20 3.47291139,20 L5.39696203,20 C6.08235439,20 6.63797468,19.4499381 6.63797468,18.7714023 L6.63797468,18.7714023">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+        </header>
+    </div>
+    <!-- header end -->
+
+    <!-- register body -->
+    <div class="container">
+        <section class="register-body w100 flex between gap3">
+            <div class="register-body_right p3">
+                <form class="register-body_right_sign-in flex column gap3 align-strat register-body_right-active">
+                    <input type="text" placeholder="نام و نام خانوادگی" class="register-body_right_sign-in_input w100" id="name">
+
+                    <input type="text" placeholder="نام کاربری" class="register-body_right_sign-in_input w100" id="username">
+
+                    <input type="email" placeholder="ایمیل" class="register-body_right_sign-in_input w100" id="email">
+
+                    <input type="text" placeholder="شماره تماس" class="register-body_right_sign-in_input w100" id="phone">
+
+                    <input type="password" placeholder="رمز عبور" class="register-body_right_sign-in_input w100" id="password">                
+
+                    <div class="register-body_right_sign-in_checkbox-remember w100 flex gap3">
+                        <label for="remember">مرا به خاطر بسپار</label>
+                        <input type="checkbox" class="register-body_right_sign-in_input_checkbox" id="sign-in_password">
+                    </div>
+
+                    <button class="register-body_right_sign-in_submit flex gap3 w100">
+                        <span class="sign-in_btn_text">ثبت نام</span>
+                        <div class="sign-in_btn_loader"></div>
+                    </button>
+                </form>
+
+                <form class="register-body_right_log-in flex column gap3 align-strat">
+                    <input type="text" placeholder="نام کاربری یا ایمیل" class="register-body_right_log-in_input w100" id="log-in_username">
+
+                    <input type="password" placeholder="رمز عبور" class="register-body_right_log-in_input w100" id="log-in_password">                
+
+                    <div class="register-body_right_log-in_checkbox-remember w100 flex gap3">
+                        <label for="remember">مرا به خاطر بسپار</label>
+                        <input type="checkbox" class="register-body_right_log-in_input_checkbox" id="log-in_password">
+                    </div>
+
+                    <button class="register-body_right_log-in_submit flex gap3 w100">
+                        <span class="log-in_btn_text">ورود</span>
+                        <div class="log-in_btn_loader"></div>
+                    </button>
+                </form>
+
+                <div class="register-body_right_error flex column gap3" data-back="">
+                    <img src="images/img/error.png" alt="error" class="register-body_right_error_img">
+                    <ul class="register-body_right_error_list w100 mt1">
+                        <li class="register-body_right_error_list_item">نام و نام خانوادگی باید از 6 کاراکتر بیشتر باشد</li>
+                        <li class="register-body_right_error_list_item">نام کاربری باید از 4 کاراکتر بیشتر باشد و بدون هیچ فاصله ای باشد</li>
+                        <li class="register-body_right_error_list_item">ممکن است نام کاربری شمارا فرد دیگری استفاده کرده باشد!</li>
+                        <li class="register-body_right_error_list_item">ایمیل را با دقت و به درستی وارد کنید</li>
+                        <li class="register-body_right_error_list_item">شماره تلفن واقعی وارد کنید</li>
+                        <li class="register-body_right_error_list_item">برای امنیت بالاتر رمز عبور باید از اعداد و حروف تشکیل شده باشد و از 6 کاراکتر بیشتر باشد</li>
+                    </ul>
+                    <button class="register-body_right_error_btn">
+                        متوجه شدم
+                        <i class="bi-arrow-up register-body_right_error_btn_icon"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="register-body_left flex column gap4 p3">
+                <img src="images/logos/logo-one-copy.png" alt="sabzlearn">
+                <h3 class="register-body_left_title">به جمع ما اضافه شو!</h3>
+                <div class="swiper swiper-comments w100">
+                    <div class="swiper-wrapper w100">
+                        <div class="swiper-slide swiper-comments_slide flex w100">
+                            <div class="register-comment w100 flex column between gap3 p2">
+                                <div class="register-comment_title w100 flex between">
+                                    <div class="register-comment_user flex gap2">
+                                        <span class="register-comment_user_text">نظر</span>
+                                        <span class="register-comment_user_name">Omid code</span>
+                                    </div>
+                                    <a href="course.html" class="register-comment_course">دوره متخصص js</a>
+                                </div>
+                                <p class="register-comment_content text-jus">
+                                    برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-comments_slide flex w100">
+                            <div class="register-comment w100 flex column between gap3 p2">
+                                <div class="register-comment_title w100 flex between">
+                                    <div class="register-comment_user flex gap2">
+                                        <span class="register-comment_user_text">نظر</span>
+                                        <span class="register-comment_user_name">Omid code</span>
+                                    </div>
+                                    <a href="course.html" class="register-comment_course">دوره متخصص js</a>
+                                </div>
+                                <p class="register-comment_content text-jus">
+                                    برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-comments_slide flex w100">
+                            <div class="register-comment w100 flex column between gap3 p2">
+                                <div class="register-comment_title w100 flex between">
+                                    <div class="register-comment_user flex gap2">
+                                        <span class="register-comment_user_text">نظر</span>
+                                        <span class="register-comment_user_name">Omid code</span>
+                                    </div>
+                                    <a href="course.html" class="register-comment_course">دوره متخصص js</a>
+                                </div>
+                                <p class="register-comment_content text-jus">
+                                    برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination swiper-comments_pagination"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- register body end -->
+
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/register.js" type="module"></script>
+    <script src="js/loader.js"></script>
+</body>
+
+</html>
